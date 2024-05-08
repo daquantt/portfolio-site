@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dwayne Aquan | GitHub Username" />
+    <meta name="description" content="Portfolio website showcasing the projects of Dwayne Aquan" />
+    <meta name="keywords" content="Dwayne Aquan, web developer, front-end, full-stack, back-end, edmonton, trinidad" />
+
+    <title>Dwayne Aquan - Web Developer</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="flex-container">
+        <section class="flex-container">
+          <a href="/index.html"><h1>Dwayne Aquan</h1></a>
+          <button class="toggle-btn" aria-label="Navigation toggle button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 80">
+              <rect width="100" height="20" rx="8"></rect>
+              <rect y="30" width="100" height="20" rx="8"></rect>
+              <rect y="60" width="100" height="20" rx="8"></rect>
+            </svg>
+          </button>
+        </section>
+        <nav>
+          <ul class="menu flex-container">
+            <li><a href="#/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech">Technologies</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero wrapper wrapper-lg">
+        <div>
+          <div class="img-container">
+            <img class="profile-img" src="img/profile-pic.webp" width="400" height="400" alt="Head shot of Dwayne" />
+          </div>
+          <div>
+            <h2>Front-End Developer</h2>
+            <p>Hi, I'm Dwayne Aquan. An aspiring Front-End developer based in Edmonton AB, Canada.</p>
+            <p class="hashtags">#OpenToWork #Volunteering</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/dwayneaquan/" target="_blank">
+                <div class="img-container">
+                  <img src="img/linkedin.svg" width="32" height="32" alt="LinkedIn logo" />
+                </div>
+              </a>
+              <a href="https://github.com/daquantt" target="_blank">
+                <div class="img-container">
+                  <img src="img/github.svg" width="32" height="32" alt="GitHub logo" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tech-stack flex-container">
+          <p>Tech Stack |</p>
+          <div class="img-container">
+            <img src="img/html5.svg" width="32" height="32" alt="HTML5 logo" />
+          </div>
+          <div class="img-container">
+            <img src="img/css3.svg" width="32" height="32" alt="CSS3 logo" />
+          </div>
+          <div class="img-container">
+            <img src="img/javascript.svg" width="32" height="32" alt="Javascript logo" />
+          </div>
+          <div class="img-container">
+            <img src="img/bootstrap.svg" width="32" height="32" alt="Bootstrap 5 logo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="wrapper wrapper-lg">
+        <div class="img-container">
+          <picture>
+            <source srcset="img/about1.webp" media="(min-width:800px)" />
+            <img src="img/about.webp" alt="Web developer coding at desk" />
+          </picture>
+        </div>
+        <div>
+          <h2>About Me</h2>
+          <p>An aspiring Front-End developer based in Edmonton AB, Canada.</p>
+          <p>My passion for programming has led me to switch careers from being in the accounting industry for 15 years. I am currently pursuing a two year diploma in Web Development at NAIT, and I have earned a place in the Dean’s Honour Roll (GPA 4.0) for the Fall 2023 and Winter 2024 semesters. My analytical skills, innovativeness, and critical thinking transfer easily into this new role to provide quality results.</p>
+          <p>Apart from that, I enjoy outdoor and sporting activities. I'm big on football, so if you are in need of a player send me an invite!</p>
+        </div>
+      </section>
+
+      <section id="tech" class="wrapper wrapper-lg">
+        <h2>Technologies</h2>
+        <p>In the realm of web development, my skill set covers the range of essential technologies.</p>
+        <div class="card-deck">
+          <div class="card">
+            <div class="image-container">
+              <img src="img/html5.svg" alt="HTML 5 logo" />
+            </div>
+            <p>HTML</p>
+          </div>
+          <!-- end of card -->
+
+          <div class="card">
+            <div class="image-container">
+              <img src="img/css3.svg" alt="CSS 3 logo" />
+            </div>
+            <p>CSS</p>
+          </div>
+          <!-- end of card -->
+
+          <div class="card">
+            <div class="image-container">
+              <img src="img/javascript.svg" alt="Javascript logo" />
+            </div>
+            <p>Javascript</p>
+          </div>
+          <!-- end of card -->
+
+          <div class="card">
+            <div class="image-container">
+              <img src="img/sass.svg" alt="Sass logo" />
+            </div>
+            <p>Sass</p>
+          </div>
+          <!-- end of card -->
+
+          <div class="card">
+            <div class="image-container">
+              <img src="img/bootstrap.svg" alt="Bootstrap 5 logo" />
+            </div>
+            <p>Bootstrap</p>
+          </div>
+          <!-- end of card -->
+        </div>
+        <!-- end of the card deck -->
+      </section>
+
+      <section id="projects" class="wrapper wrapper-lg">
+        <h2>Featured Projects</h2>
+        <p>These projects showcase a broad range of technologies focusing on front-end development. They highlight my versatility and innovation in crafting dynamic digital solutions.</p>
+        <p>For a full list of projects, visit my <a href="#/">Portfolio</a>.</p>
+
+        <div class="popup">
+          <button id="close" aria-label="Close popup">Close</button>
+          <div class="image-container">
+            <img src="img/wip.webp" alt="Laptop with an under construction sign on it" />
+          </div>
+          <section>
+            <h3>Coming Soon!</h3>
+            <p>Site under construction.</p>
+          </section>
+        </div>
+
+        <div class="project">
+          <div class="image-container">
+            <img src="img/treehouse.png" alt="Screenshot of Treehouse website homepage" />
+          </div>
+          <section>
+            <h3>Informational Website</h3>
+            <p>A fully responsive website built for a small business to showcase their products. Some features include toggle navigation, contact and subscribe forms and accordions.</p>
+            <div class="tech-tabs">
+              <span class="tech-tab html">HTML</span>
+              <span class="tech-tab css">CSS</span>
+              <span class="tech-tab javascript">Javascript</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/daquantt/treehouse-demo" target="_blank">Code <img src="img/github.svg" width="32" height="32" alt="GitHub logo" /></a>
+              <a href="https://fascinating-daffodil-84fc9c.netlify.app/" target="_blank">Live Demo <img src="img/ext-link.svg" width="32" height="32" alt="external link arrow icon" /></a>
+            </div>
+          </section>
+        </div>
+
+        <div class="project">
+          <div class="image-container">
+            <img src="img/wip.webp" alt="Laptop with an under construction sign on it" />
+          </div>
+          <section>
+            <h3>Website 2 - Under Construction</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aspernatur consectetur saepe ipsum vero voluptates odit blanditiis repellat voluptatum provident.</p>
+            <div class="tech-tabs">
+              <span class="tech-tab html">HTML</span>
+              <span class="tech-tab css">CSS</span>
+              <span class="tech-tab javascript">Javascript</span>
+            </div>
+            <div class="links">
+              <a class="inactive" href="#/">Code <img src="img/github.svg" width="32" height="32" alt="GitHub logo" /></a>
+              <a class="inactive" href="#/">Live Demo <img src="img/ext-link.svg" width="32" height="32" alt="external link arrow icon" /></a>
+            </div>
+          </section>
+        </div>
+
+        <div class="project">
+          <div class="image-container">
+            <img src="img/wip.webp" alt="Laptop with an under construction sign on it" />
+          </div>
+          <section>
+            <h3>Website 3 - Under Construction</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aspernatur consectetur saepe ipsum vero voluptates odit blanditiis repellat voluptatum provident.</p>
+            <div class="tech-tabs">
+              <span class="tech-tab html">HTML</span>
+              <span class="tech-tab css">CSS</span>
+              <span class="tech-tab javascript">Javascript</span>
+              <span class="tech-tab react">React</span>
+              <span class="tech-tab bootstrap">Bootstrap</span>
+            </div>
+            <div class="links">
+              <a class="inactive" href="#/">Code <img src="img/github.svg" width="32" height="32" alt="GitHub logo" /></a>
+              <a class="inactive" href="#/">Live Demo <img src="img/ext-link.svg" width="32" height="32" alt="external link arrow icon" /></a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="contact" class="wrapper wrapper-lg">
+        <h2>Contact</h2>
+        <p>Feel free to contact me. I am open to volunteer work!</p>
+        <div class="card-deck flex-container">
+          <div class="card flex-container">
+            <div class="image-container">
+              <img src="img/envelope-open.svg" alt="open envelope icon" />
+            </div>
+            <section>
+              <h3>Email</h3>
+              <p>dwayneaquan@gmail.com</p>
+            </section>
+          </div>
+          <div class="card flex-container">
+            <div class="image-container">
+              <img src="img/map.svg" alt="map icon" />
+            </div>
+            <section>
+              <h3>Location</h3>
+              <p>Edmonton, Alberta, Canada</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper wrapper-sm flex-container">
+        <h3>Dwayne Aquan</h3>
+        <p>&copy; 2024. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
