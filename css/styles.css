@@ -249,6 +249,7 @@ main {
 
 .project .image-container img {
   border-radius: 10px;
+  border: 1px solid lightgray;
 }
 
 .tech-tabs {
