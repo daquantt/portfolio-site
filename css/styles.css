@@ -8,6 +8,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -233,10 +234,10 @@ main {
 }
 
 #tech .card p {
-  font-size: 2rem;
   padding: 0.5rem;
   text-align: center;
 }
+
 
 /* --- PROJECTS --- */
 #projects > p > a {
@@ -285,6 +286,10 @@ main {
   background-color: #8d84e2;
 }
 
+.supabase {
+  background-color: #2d9b6a;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -303,7 +308,6 @@ main {
 
 .links a:hover {
   border: 1px solid var(--dark);
-  background-color: var(--accent);
 }
 
 .links img {
@@ -449,6 +453,10 @@ footer {
   }
   #about > div:nth-of-type(2) {
     width: 68%;
+  }
+      
+  #tech .card p {
+    font-size: 2rem;
   }
 
   .project {
