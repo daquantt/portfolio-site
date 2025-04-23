@@ -29,7 +29,7 @@ body {
 }
 
 .wrapper-lg {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .wrapper-sm {
@@ -477,6 +477,7 @@ footer h3 {
   .hero > div:first-of-type {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .hero > div:first-of-type > div:first-of-type {
