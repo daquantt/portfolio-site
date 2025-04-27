@@ -1,0 +1,94 @@
+@use 'breakpoints' as *;
+@use 'colors' as *;
+
+header {
+  font-weight: bold;
+  width: 100%;
+  padding: 2rem;
+  background-color: $light;
+  /* box-shadow: 0px 5px 10px #5e5e5e; */
+  position: fixed;
+  top: 0;
+
+  nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    opacity: 0.9;
+    background-color: $dark;
+
+    @media (min-width:$md) {
+      position: static; /* Reset the position and the width */
+      width: auto; /* eqiv of unset for width */
+      max-height: unset;
+      overflow: visible;
+      background-color: unset;
+    }
+    
+    .menu li {
+      line-height: 2.5;
+
+      a {
+        color: $light;
+        /* text-transform: uppercase; */
+        padding: 0 1rem;
+        display: block;
+
+        @media (min-width:$md) {
+          color: $dark;
+        }
+      }
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .toggle-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    height: 4rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover svg rect {
+      fill: $accent;
+    }
+
+    @media (min-width:$md) {
+      display: none;
+    }
+
+    svg rect {
+      fill: $dark;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  
+    img {
+      width: 30px;
+    }
+  }
+  
+  .show-nav {
+    max-height: 100vh;
+  }
+
+  div section.flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+@use 'breakpoints' as *;
+@use 'colors' as *;
+
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  
+    @media (min-width:$sm) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+
+  h3 {
+    color: var(--light);
+    margin: 0 0 0 1rem;
+  }
+
+  @media screen and (min-width: $sm) {
+    div > * {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+

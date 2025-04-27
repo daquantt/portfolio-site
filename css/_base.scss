@@ -1,0 +1,70 @@
+@use 'breakpoints' as *;
+@use 'colors' as *;
+
+:root {
+  --roboto: 1.6rem/1.5 "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font: var(--roboto);
+  color: $dark;
+}
+
+/* --- UTILITY CLASSES --- */
+.wrapper {
+  padding: 5rem 2rem;
+  margin: 0 auto;
+}
+
+.wrapper-lg {
+  max-width: 1000px;
+}
+
+.wrapper-sm {
+  max-width: 500px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width:$md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.image-container {
+  width: 100%;
+  height: max-content;
+}
+
+/* .sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+} */
+
+@media screen and (min-width: $sm) {
+  .wrapper.flex-container {
+    width: 100%;
+  }
+  
+}
