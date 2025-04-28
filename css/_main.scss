@@ -13,15 +13,15 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
 
-  > div:first-of-type {
-    order: 2;
-  }
-
-  > div:nth-of-type(2) {
-    width: 50rem;
-  }
+    > div:first-of-type {
+      order: 2;
+    }
+  
+    > div:nth-of-type(2) {
+      width: 50rem;
+    }
+  }  
 }
 
 .profile-img {
@@ -263,10 +263,31 @@ main {
 /* --- VOLUNTEER --- */
 #volunteer {
   section {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     .flex-container {
-      justify-content: unset;
+      align-items: flex-start;
+
+      span {
+        display: none;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      @media (min-width: $md) {
+        justify-content: unset;
+        align-items: center;
+
+        span {
+          display: inline;
+        }
+  
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
 
     h3,

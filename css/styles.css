@@ -258,12 +258,12 @@ main {
     justify-content: space-between;
     align-items: center;
   }
-}
-.hero > div:first-of-type > div:first-of-type {
-  order: 2;
-}
-.hero > div:first-of-type > div:nth-of-type(2) {
-  width: 50rem;
+  .hero > div:first-of-type > div:first-of-type {
+    order: 2;
+  }
+  .hero > div:first-of-type > div:nth-of-type(2) {
+    width: 50rem;
+  }
 }
 
 .profile-img {
@@ -492,10 +492,28 @@ main {
 
 /* --- VOLUNTEER --- */
 #volunteer section {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 #volunteer section .flex-container {
-  justify-content: unset;
+  align-items: flex-start;
+}
+#volunteer section .flex-container span {
+  display: none;
+}
+#volunteer section .flex-container p {
+  margin-bottom: 1rem;
+}
+@media (min-width: 800px) {
+  #volunteer section .flex-container {
+    justify-content: unset;
+    align-items: center;
+  }
+  #volunteer section .flex-container span {
+    display: inline;
+  }
+  #volunteer section .flex-container p {
+    margin-bottom: 0;
+  }
 }
 #volunteer section h3,
 #volunteer section p {
