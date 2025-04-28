@@ -18,3 +18,27 @@ toggleBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   popup.style.display = "none";
 });
+
+
+const navLinks = document.querySelectorAll('.menu li a');
+
+console.log(navLinks)
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault()
+
+    const targetId = this.getAttribute('href').substring(1); // Get the ID
+    const targetElement = document.getElementById(targetId);
+    // console.log(targetId)
+    // console.log(targetElement)
+
+    if (targetElement) {
+      const targetPosition = targetElement.offsetTop; // Get the element's position
+      const offset = 80; // Adjust for 80px offset
+      window.scrollTo({
+          top: targetPosition - offset
+      });
+    }
+  })
+});
