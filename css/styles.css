@@ -350,23 +350,25 @@ main {
   }
 }
 #tech .card-deck .card {
-  width: calc(50% - 2rem);
+  width: calc(33.3333333333% - 2rem);
   margin: 1rem;
-  padding: 1rem;
+  font-size: 1.2rem;
 }
 @media (min-width: 500px) {
   #tech .card-deck .card {
     width: calc(25% - 2rem);
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 800px) {
+  #tech .card-deck .card {
+    width: calc(16.6666666667% - 2rem);
+    margin: 1rem 2rem;
   }
 }
 #tech .card-deck .card p {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   text-align: center;
-}
-@media (min-width: 800px) {
-  #tech .card-deck .card p {
-    font-size: 2rem;
-  }
 }
 
 /* --- PROJECTS --- */
@@ -384,9 +386,6 @@ main {
   }
   .project > * {
     width: calc(50% - 1rem);
-  }
-  .project:nth-last-of-type(2) section {
-    order: -1;
   }
 }
 

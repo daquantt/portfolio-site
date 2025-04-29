@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dwayne Aquan | GitHub Username - daquantt">
+    <meta name="description" content="Portfolio website showcasing the projects of Dwayne Aquan">
+    <meta name="keywords" content="Dwayne Aquan, web developer, front-end, full-stack, back-end, edmonton, trinidad">
+
+    <title>Dwayne Aquan - Portfolio</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="flex-container">
+        <section class="flex-container">
+          <a class="logo" href="/index.html"><img src="img/logo.png" alt=""><h1>Dwayne Aquan</h1></a>
+          <button class="toggle-btn" aria-label="Navigation toggle button">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 80">
+              <rect width="100" height="20" rx="8"></rect>
+              <rect y="30" width="100" height="20" rx="8"></rect>
+              <rect y="60" width="100" height="20" rx="8"></rect>
+            </svg>
+          </button>
+        </section>
+        <nav>
+          <ul class="menu flex-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#tech">Technologies</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="portfolio">
+      
+      <section id="projects" class="wrapper wrapper-lg">
+        <h2>My Portfolio of Projects</h2>
+        <p>These projects showcase a broad range of technologies focusing on front-end development. They highlight my versatility and innovation in crafting dynamic digital solutions.</p>
+
+        <div class="popup">
+          <button id="close" aria-label="Close popup">Close</button>
+          <div class="image-container">
+            <img src="img/wip.webp" alt="Laptop with an under construction sign on it">
+          </div>
+          <section>
+            <h3>Coming Soon!</h3>
+            <p>Site under construction.</p>
+          </section>
+        </div>
+
+        <div class="project-list">
+
+        </div>       
+
+      </section>      
+    </main>
+
+    <footer>
+      <div class="wrapper wrapper-sm flex-container">
+        <a class="logo" href="/index.html"><img src="img/logo.png" alt=""><h3>Dwayne Aquan</h3></a>
+        <p>&copy; 2025. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

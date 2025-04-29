@@ -26,19 +26,86 @@ console.log(navLinks)
 
 navLinks.forEach(link => {
   link.addEventListener('click', function (event) {
-    event.preventDefault()
+    
 
     const targetId = this.getAttribute('href').substring(1); // Get the ID
     const targetElement = document.getElementById(targetId);
-    // console.log(targetId)
-    // console.log(targetElement)
-
+    console.log(targetId)
+    console.log(targetElement)
+    let offset = 80; // Adjust for 80px offset
+    
     if (targetElement) {
+      event.preventDefault()
       const targetPosition = targetElement.offsetTop; // Get the element's position
-      const offset = 80; // Adjust for 80px offset
       window.scrollTo({
-          top: targetPosition - offset
+        top: targetPosition - offset
       });
+      console.log(offset)
     }
   })
 });
+
+
+const projects = [
+  {
+    name: "DayCareDash",
+    description: "Web application to monitor your child's daycare hours.",
+    tech: ["HTML", "CSS", "Javascript", "React", "Bootstrap", "Supabase"],
+    code_url: "https://github.com/daquantt/daycare-supabase",
+    demo_url: "https://daycaredash.netlify.app/",
+    image_url: "img/daycare.webp"
+  },
+  {
+    name: "Price Logging Website with Leaderboard",
+    description: "A Bootstrap website built for inputting and searching product prices. Some features include authentication, search functionality, ranking system and fully responsive.",
+    tech: ["HTML", "Javascript", "Bootstrap"],
+    code_url: "https://github.com/daquantt/pricecheck-demo",
+    demo_url: "https://tourmaline-haupia-a4ca86.netlify.app/",
+    image_url: "img/pricecheck.webp"
+  },
+  {
+    name: "Informational Website",
+    description: "A fully responsive website built for a small business to showcase their products. Some features include toggle navigation, contact and subscribe forms and accordions.",
+    tech: ["HTML", "CSS", "Javascript"],
+    code_url: "https://github.com/daquantt/treehouse-demo",
+    demo_url: "https://fascinating-daffodil-84fc9c.netlify.app/",
+    image_url: "img/treehouse.webp"
+  },
+  {
+    name: "Dashboard",
+    description: "A dashboard for a Residents Association",
+    tech: ["HTML", "Tailwind", "Javascript"],
+    code_url: "",
+    demo_url: "https://spontaneous-melomakarona-623f74.netlify.app/",
+    image_url: "img/dashboard.webp"
+  }
+]
+
+const projectList = document.querySelector(".project-list");
+
+projects.forEach(project => {
+  projectList.innerHTML += `
+  <div class="project">
+    <div class="image-container">
+      <img src=${project.image_url} alt="">
+    </div>
+    <section>
+      <h3>${project.name}</h3>
+      <p>${project.description}</p>
+      <div class="tech-tabs">
+        <span class="tech-tab html">HTML</span>
+        <span class="tech-tab css">CSS</span>
+        <span class="tech-tab javascript">Javascript</span>
+        <span class="tech-tab react">Tailwind</span>
+      </div>
+      <div class="links">
+        <a href=${project.code_url} target="_blank">View Code <img src="img/github.svg"
+            width="32" height="32" alt="GitHub logo"></a>
+        <a href=${project.demo_url} target="_blank">Live Demo <img src="img/ext-link.svg"
+            width="32" height="32" alt="external link arrow icon"></a>
+      </div>
+    </section>
+  </div>
+`
+});
+

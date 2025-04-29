@@ -112,21 +112,22 @@ main {
     }
 
     .card {
-      width: calc(100% / 2 - 2rem);
+      width: calc(100% / 3 - 2rem);
       margin: 1rem;
-      padding: 1rem;
+      font-size: 1.2rem;
       
       @media (min-width: $sm) {
         width: calc(100% / 4 - 2rem);
+        font-size: 1.6rem;
+      }
+      @media (min-width: $md) {
+        width: calc(100% / 6 - 2rem);
+        margin: 1rem 2rem;
       }
 
       p {
-        padding: 0.5rem;
+        padding: 0.5rem 0;
         text-align: center;
-
-        @media (min-width: $md) {
-          font-size: 2rem;
-        }
       }
     }
   }
@@ -148,9 +149,9 @@ main {
       width: calc(100% / 2 - 1rem);
     }
 
-    &:nth-last-of-type(2) section {
-      order: -1;
-    }
+    // &:nth-last-of-type(2) section {
+    //   order: -1;
+    // }
   }
 }
 
