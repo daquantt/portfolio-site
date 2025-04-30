@@ -197,6 +197,10 @@ main {
   background-color: #2d9b6a;
 }
 
+.tailwind {
+  background-color: #00bcff;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -329,6 +333,34 @@ main {
       p {
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+
+/* --- PORTFOLIO --- */
+
+#portfolio {
+  form {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    input {
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      border: 1px solid lightgray;
+      max-width: 20rem;
+    }
+
+    button {
+      padding: 0 1rem;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      border: 1px solid lightgray;
+      cursor: pointer;
     }
   }
 }

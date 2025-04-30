@@ -430,6 +430,10 @@ main {
   background-color: #2d9b6a;
 }
 
+.tailwind {
+  background-color: #00bcff;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -548,6 +552,28 @@ main {
 #contact .card-deck .card h3,
 #contact .card-deck .card p {
   margin-bottom: 0;
+}
+
+/* --- PORTFOLIO --- */
+#portfolio form {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+#portfolio form input {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  border: 1px solid lightgray;
+  max-width: 20rem;
+}
+#portfolio form button {
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  border: 1px solid lightgray;
+  cursor: pointer;
 }
 
 footer {
