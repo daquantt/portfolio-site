@@ -99,6 +99,15 @@ const projects = [
     demo_url: "https://enchanting-shortbread-3d1ba0.netlify.app/",
     image_url: "img/fabric-store.webp"
   },
+  {
+    id: "",
+    name: "Photography Website",
+    description: "",
+    tech: ["Figma"],
+    code_url: "",
+    demo_url: "img/photography.webp",
+    image_url: "img/photography-thumb.webp"
+  },
 ]
 
 const projectList = document.querySelector(".project-list");
@@ -120,8 +129,7 @@ projects.forEach(project => {
           <a href=${project.code_url} target="_blank">View Code <img src="img/github.svg" width="32" height="32" alt="GitHub logo"></a>`
           :
           ""
-        }
-        
+        }        
         <a href=${project.demo_url} target="_blank">Live Demo <img src="img/ext-link.svg" width="32" height="32" alt="external link arrow icon"></a>
       </div>
     </section>
@@ -162,8 +170,11 @@ const filterItems = (filterValue) => {
               ${project.tech.map(tech => `<span class="tech-tab ${tech.toLowerCase()}">${tech}</span>`).join('')}
             </div>
             <div class="links">
-              <a href=${project.code_url} target="_blank">View Code <img src="img/github.svg"
-                  width="32" height="32" alt="GitHub logo"></a>
+              ${project.code_url != "" ? `
+                <a href=${project.code_url} target="_blank">View Code <img src="img/github.svg" width="32" height="32" alt="GitHub logo"></a>`
+                :
+                ""
+              }
               <a href=${project.demo_url} target="_blank">Live Demo <img src="img/ext-link.svg"
                   width="32" height="32" alt="external link arrow icon"></a>
             </div>

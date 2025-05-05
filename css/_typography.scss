@@ -29,4 +29,9 @@ p {
 
 a {
   color: var(--dark);
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 }
