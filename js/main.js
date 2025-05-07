@@ -84,7 +84,7 @@ const projects = [
   {
     id: "5",
     name: "Clothing Store",
-    description: "",
+    description: "A clothing store landing page with features such as a modal form, horizontal card display, parallax scroll (privacy page) and mobile responsive.",
     tech: ["HTML", "CSS", "Javascript"],
     code_url: "",
     demo_url: "https://heroic-mooncake-960697.netlify.app/",
@@ -93,7 +93,7 @@ const projects = [
   {
     id: "6",
     name: "Fabric Store",
-    description: "",
+    description: "A landing page for a fabric store to display popular fabrics, help customers find fabrics and pricing packages. It is mobile responsive and has hover effects on cards.",
     tech: ["HTML", "CSS", "Javascript"],
     code_url: "",
     demo_url: "https://enchanting-shortbread-3d1ba0.netlify.app/",
@@ -101,8 +101,8 @@ const projects = [
   },
   {
     id: "",
-    name: "Photography Website",
-    description: "",
+    name: "Photography Landing Page",
+    description: "A webpage designed in Figma to build awareness, promote events, and market the club and membership option.",
     tech: ["Figma"],
     code_url: "",
     demo_url: "img/photography.webp",
